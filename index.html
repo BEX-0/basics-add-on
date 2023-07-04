@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basics Add-On</title>
     <style>
     body {
         text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #a0a2ff;
+    }
+    .about-me {
+        max-width: 700px;
+        font-weight: 700;
+        padding: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+    button {
+        background-color: black;
+        border: 2px solid #bf51ff;
+        border-radius: 10px;
+        color: #bf51ff;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 5px 10px;
+        margin: 10px;
+        transition: all 200ms ease-in-out;
+    }
+    button:hover {
+        background-color: #bf51ff;
+        border: 2px solid black;
+        color: black;
+        cursor: pointer;
     }
     img {
         width: 300px;
         border-radius: 10px;
     }
+    h1 {
+        font-size: 60px;
+    }
+    header, .about-me {
+        background-color: rgb(255, 255, 255, 0.4);
+        border: 10px groove #3A0CA3;
+        border-radius: 20px;
+    }
+    header {
+        margin-bottom: 50px;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 900;
+    }
     </style>
 </head>
 <body>
-    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/273/original/red-full-page.png?1688501194" alt="">
-    <h1>I Like to Draw</h1>
-    <h2>Here's some of my favorite drawings and doodles</h2>
+    <div class="main-body">
     <button>Dark Mode</button>
-    <p>I mostly like to draw with black markers or pens alone</p>
+    <header>
+    <h1>🎨 I Like to Draw 🎨</h1>
+    </header>
+    <p>I mostly like to use black markers or pens alone</p>
     <div class="drawings-bw">
         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/274/original/eye-and-snake.jpg?1688501252" alt="">
         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/275/original/long-eyes.jpg?1688501304" alt="">
@@ -41,11 +83,12 @@
         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/288/original/blue-flowers.jpg?1688501719" alt="">
         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/289/original/rb-face.png?1688501730" alt="">
     </div>
-    <p>
+    <div class="about-me">
         I'm not an artist, nor do I apire to be one. But doodling in a sketchbook from time to time has become a very productive use of my time. 
         It was once suggested to me to draw in my spare time to reduce stress. I was skeptical at first, but It grew on me quickly.
         I now have a cool hobby that helps me unwind and encourages creativity. Also, my line work has <em>definetely</em> improved.
-    </p>
-    Coded by Rebecca Leibowitz
+    </div>
+    <footer><strong>Coded by Rebecca Leibowitz</strong></footer>
+    </div>
 </body>
 </html>
