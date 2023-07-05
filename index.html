@@ -37,9 +37,26 @@
         color: black;
         cursor: pointer;
     }
+    .drawings-bw img {
+        filter: grayscale(105%) brightness(130%) contrast(110%);
+    }
+    .drawings-color .color-filter img {
+        filter: brightness(140%)
+    }
+    footer {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 20px;
+    }
     img {
-        width: 300px;
+        width: 200px;
         border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        position: relative;
+    }
+    img:hover {
+        transform: scale(1.5);
+        z-index: +8;
     }
     h1 {
         font-size: 60px;
@@ -50,11 +67,6 @@
     p {
         font-size: 20px;
         font-weight: 900;
-    }
-    footer {
-        font-size: 15px;
-        font-weight: 600;
-        margin: 20px;
     }
     </style>
 </head>
@@ -82,14 +94,16 @@
     </div>
     <p>...but recently I've been trying to branch out and use more colors</p>
     <div class="drawings-color">
-        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/282/original/alien-spiral.jpg?1688501579" alt="">
-        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/283/original/pink-hair.jpg?1688501600" alt="">
-        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/284/original/skull-and-flowers.jpg?1688501611" alt="">
+        <span class="color-filter">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/283/original/pink-hair.jpg?1688501600" alt="">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/284/original/skull-and-flowers.jpg?1688501611" alt="">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/286/original/green-eye.png?1688501668" alt="">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/288/original/blue-flowers.jpg?1688501719" alt="">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/289/original/rb-face.png?1688501730" alt="">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/287/original/blue-two-eyes.png?1688501693" alt="">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/282/original/alien-spiral.jpg?1688501579" alt="">
+        </span>
         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/285/original/red-eye.png?1688501649" alt="">
-        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/286/original/green-eye.png?1688501668" alt="">
-        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/287/original/blue-two-eyes.png?1688501693" alt="s">
-        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/288/original/blue-flowers.jpg?1688501719" alt="">
-        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/289/original/rb-face.png?1688501730" alt="">
     </div>
     <footer>Coded by Rebecca Leibowitz</footer>
     </div>
