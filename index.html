@@ -18,7 +18,7 @@
         margin: 0 auto;
     }
     .about-me, footer {
-        background-color: rgb(255, 255, 255, 0.4);
+        background-color: rgb(255, 255, 255, 0.2);
         border: 10px groove #3A0CA3;
         border-radius: 20px;
     }
@@ -38,6 +38,10 @@
         border: 2px solid black;
         color: black;
         cursor: pointer;
+    }
+    .dark {
+        background-color: black;
+        color: white;
     }
     .drawings-bw img {
         filter: grayscale(105%) brightness(130%) contrast(110%);
@@ -62,6 +66,7 @@
         border-radius: 10px;
         transition: all 200ms ease-in-out;
         position: relative;
+        aspect-ratio: 1;
     }
     img:hover {
         transform: scale(1.5);
@@ -76,7 +81,7 @@
     .main-body {
         border: 2px solid #3A0CA3;
         border-radius: 10px;
-        background-color: lightgray;
+        background-color: rgb(255, 255, 255, 0.2);
         max-width: 850px;
         display: block;
         margin: 0 auto;
@@ -124,5 +129,16 @@
     </div>
 </div>
 <footer>Coded by Rebecca Leibowitz</footer>
+<script>
+    function changeTheme() {
+        let body = document.querySelector("body");
+        
+        body.classList.toggle("dark");
+
+    }
+    
+    let themeButton = document.querySelector("button");
+    themeButton.addEventListener("click", changeTheme);
+</script>
 </body>
 </html>
