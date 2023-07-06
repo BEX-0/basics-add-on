@@ -11,14 +11,16 @@
         background-color: #a0a2ff;
     }
     .about-me {
-        background-color: rgb(255, 255, 255, 0.4);
-        border: 10px groove #3A0CA3;
-        border-radius: 20px;
         max-width: 700px;
         font-weight: 700;
         padding: 10px;
         display: block;
         margin: 0 auto;
+    }
+    .about-me, footer {
+        background-color: rgb(255, 255, 255, 0.4);
+        border: 10px groove #3A0CA3;
+        border-radius: 20px;
     }
     button {
         background-color: black;
@@ -40,13 +42,20 @@
     .drawings-bw img {
         filter: grayscale(105%) brightness(130%) contrast(110%);
     }
-    .drawings-color .color-filter img {
-        filter: brightness(140%)
+    .drawings-color img {
+        filter: brightness(135%)
+    }
+    .drawings-bw, .drawings-color {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px
     }
     footer {
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
         font-size: 15px;
         font-weight: 600;
-        margin: 20px;
     }
     img {
         width: 200px;
@@ -64,6 +73,16 @@
     header {
         margin-bottom: 50px;
     }
+    .main-body {
+        border: 2px solid #3A0CA3;
+        border-radius: 10px;
+        background-color: lightgray;
+        max-width: 850px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 10px
+    }
     p {
         font-size: 20px;
         font-weight: 900;
@@ -78,7 +97,7 @@
         <div class="about-me">
             I'm not an artist, nor do I apire to be one. But doodling in a sketchbook from time to time has become a very productive use of my time. 
             It was once suggested to me to draw in my spare time to reduce stress. I was skeptical at first, but It grew on me quickly.
-            I now have a cool hobby that helps me unwind and encourages creativity. Also, my line work has <em>definetely</em> improved.
+            I now have a cool hobby that helps me unwind and encourages creativity. Also, my line work has <em>definetely</em> improved over time.
         </div>
         <button>Dark Mode</button>
     <p>I mostly like to use black markers or pens alone</p>
@@ -94,18 +113,16 @@
     </div>
     <p>...but recently I've been trying to branch out and use more colors</p>
     <div class="drawings-color">
-        <span class="color-filter">
-            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/283/original/pink-hair.jpg?1688501600" alt="">
-            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/284/original/skull-and-flowers.jpg?1688501611" alt="">
-            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/286/original/green-eye.png?1688501668" alt="">
-            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/288/original/blue-flowers.jpg?1688501719" alt="">
-            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/289/original/rb-face.png?1688501730" alt="">
-            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/287/original/blue-two-eyes.png?1688501693" alt="">
-            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/282/original/alien-spiral.jpg?1688501579" alt="">
-        </span>
-        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/285/original/red-eye.png?1688501649" alt="">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/617/original/red-pink-face.jpg?1688671646" alt="">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/288/original/blue-flowers.jpg?1688501719" alt="">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/283/original/pink-hair.jpg?1688501600" alt="">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/284/original/skull-and-flowers.jpg?1688501611" alt="">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/287/original/blue-two-eyes.png?1688501693" alt="">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/286/original/green-eye.png?1688501668" alt="">            
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/282/original/alien-spiral.jpg?1688501579" alt="">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/289/original/rb-face.png?1688501730" alt="">
     </div>
-    <footer>Coded by Rebecca Leibowitz</footer>
-    </div>
+</div>
+<footer>Coded by Rebecca Leibowitz</footer>
 </body>
 </html>
